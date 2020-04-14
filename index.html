@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="dealerSide" style="margin-top: 20px;">
+        <div class="dealerCards" id="dealerCards"></div>
+        <div
+          class="dealerScore"
+          id="dealerScoreContainer"
+          style="display: none;"
+        >
+          <p
+            id="dealerScore"
+            style="text-align: center; line-height: 10px; font-size: 18px; color: white; font-weight: bold;"
+          ></p>
+        </div>
+      </div>
+      <h1 class="animated jackInTheBox" id="youWin">
+        <img src="images/winnerIcon.png" alt="" />
+      </h1>
+      <h1 class="animated jackInTheBox" id="youLost">
+        <img src="images/bustIcon.png" alt="" />
+      </h1>
+      <h1 class="animated jackInTheBox" id="lowHand">
+        <img src="images/lowHand.png" alt="" />
+      </h1>
+      <h1 class="animated jackInTheBox" id="highHand">
+        <img src="images/highHand.png" alt="" />
+      </h1>
+      <h1 class="animated jackInTheBox" id="dealerBust">
+        <img src="images/dealerBust.png" alt="" />
+      </h1>
+      <h1 class="animated jackInTheBox" id="blackjack">
+        <img src="images/21.png" alt="" />
+      </h1>
+      <h1 class="animated jackInTheBox" id="push">
+        <img src="images/push.png" alt="" />
+      </h1>
+      <div class="playerSide">
+        <div class="playerCards" id="playerCards"></div>
+        <div
+          class="playerScore"
+          id="playerScoreContainer"
+          style="display: none;"
+        >
+          <p
+            id="playerScore"
+            style="text-align: center; line-height: 15px; font-size: 18px; color: white; font-weight: bold;"
+          ></p>
+        </div>
+      </div>
+      <div class="controls" style="text-align: center;">
+        <div class="controlFlex">
+          <button
+            onclick="stayWrapper()"
+            id="stayButton"
+            style="display: none;"
+          >
+            Stand
+          </button>
+          <button onclick="hitMe()" id="hitBtn" style="display: none;">
+            Hit
+          </button>
+          <button onclick="deal()" id="dealBtn">
+            Deal
+          </button>
+          <button
+            id="restartGame"
+            style="display: none;"
+            onclick="restartGame()"
+          >
+            New Hand
+          </button>
+        </div>
+      </div>
+      <p style="margin: auto; color: white;" id="footer">
+        Built with ♠ <span class="heart">♥</span> ♦ ♣ by
+        <a href="https://ethanchiasson.com">Ethan Chiasson</a>
+      </p>
+    </div>
+  </body>
+</html>
